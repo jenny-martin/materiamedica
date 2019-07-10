@@ -22,6 +22,10 @@ Each user will be able to view other herbalists' data, but they will not have th
 * Node.js 
 * Bootstrap? Materialize? - Styling
 
+##ERD
+
+User -|---< Post
+
 ##Getting Started:
 
 -- Add links here --
