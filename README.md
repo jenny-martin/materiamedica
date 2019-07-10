@@ -4,7 +4,7 @@ Introduction
 
 Every herbalist has their own unique experiences with the herbs that they get familiar with as they expand upon their knowledge base. 
 
-This application allows herbalists to share their personal Materia Medica (a log of the herbs they've used and important information about each plant) with others as well as to continue to add to their own over time. 
+This application allows herbalists to share their personal Materia Medica (kind of like a dictionary of herbs and their uses) with others as well as to continue to add to their own over time. 
 
 Each user will have the ability to login to their own account,or to sign up for an account if they don't already have one. 
 
