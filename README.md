@@ -1,4 +1,4 @@
-###Unit 4 Project - Materia Medica Application
+##Unit 4 Project - Materia Medica Application
 
 Introduction 
 
@@ -12,7 +12,7 @@ Once logged in they'll be able to add information to their Materia Medica, make 
 
 Each user will be able to view other herbalists' data, but they will not have the ability to make any changes to someone else's data. 
 
-###Technologies Used:
+##Technologies Used:
 
 * Full Stack MERN application 
 * Deployed on Heroku
@@ -22,20 +22,20 @@ Each user will be able to view other herbalists' data, but they will not have th
 * Node.js 
 * Bootstrap? Materialize? - Styling
 
-###Getting Started:
+##Getting Started:
 
 -- Add links here --
 
 [Trello] !(https://trello.com/b/2BOOpOao/unit-4-project)
-[GitHub] !(https://github.com/jennynm1010/unit4project.git)
+[GitHub] !(https://github.com/jennynm1010/materiamedica)
 [Heroku] !()
 
 
-###Unsolved Problems:
+##Unsolved Problems:
 
  ^^^ problems problems how you gonna solve em ^^^
 
-###Future Enhancements: 
+##Future Enhancements: 
 
 +++ add stretch goals here +++
 
