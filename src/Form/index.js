@@ -8,6 +8,7 @@ export default class Form extends Component {
 		history: '',
 		uses:''
     }
+    
     handleChange = event => {
         this.setState({
             [event.currentTarget.name] : event.currentTarget.value
@@ -17,6 +18,13 @@ export default class Form extends Component {
     handleSubmit = event => {
         event.preventDefault()
         this.props.handleAddPost(this.state)
+        this.setState({
+            herbalist: '',
+		    botanical_name: '',
+		    common_name: '',
+		    history: '',
+		    uses:''
+        });
     }
 
     render() {
@@ -24,22 +32,25 @@ export default class Form extends Component {
             <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Herbalist</label>
-                    <input onChange={this.handleChange}
+                    <input 
+                    onChange={this.handleChange}
                     name="herbalist"
                     value={this.state.herbalist}
                     />
                 </div>
-                <div />
-                <label>Botanical Name</label>
-                <input onChange={this.handleChange}
-                    name="botanical name"
+                <div>
+                    <label>Botanical Name</label>
+                    <input 
+                    onChange={this.handleChange}
+                    name="botanical_name"
                     value={this.state.botanical_name}
                     />
-                <div />
+                </div>
                 <div>
                     <label>Common Name</label>
-                    <input onChange={this.handleChange}
-                    name="common name"
+                    <input 
+                    onChange={this.handleChange}
+                    name="common_name"
                     value={this.state.common_name}
                     />
                 </div>
@@ -50,19 +61,12 @@ export default class Form extends Component {
                     value={this.state.history}
                     />
                 </div>
-                <div>
-                <label>Herbalist</label>
-                <input onChange={this.handleChange}
-                name="herbalist"
-                value={this.state.herbalist}
-                />
-            </div>
             <div>
                 <label>Uses</label>
-                <input onChange={this.handleChange}
+                <textarea onChange={this.handleChange}
                     name="uses"
                     value={this.state.uses}
-                    />
+                    ></textarea>
                 </div>
                 <input type="submit" />
             </form>

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Form from '../Form';
+import MateriaPost from '../MateriaPost';
+import Button from '../Button';
 
 export default class Main extends Component {
 	state = {
-		isPosting: true,
-		post: [
+		isPosting: false,
+		posts: [
 			{
 				herbalist: 'Jenny Martin',
 				botanical_name: 'Mentha Piperita',
@@ -15,21 +17,16 @@ export default class Main extends Component {
 		]
 	}
 
-	handleClick = event => {
+	handleClick = (event) => {
 		this.setState({
 			isPosting: !this.state.isPosting
 		})
 	}
 
-	handleAddPost = ({
-		herbalist, 
-		botanical_name,
-		common_name, 
-		history,
-		uses
-	}) => {
+	handleAddPost = ({herbalist, botanical_name, common_name, history, uses}) => {
 		this.setState({
-			posts: [{herbalist, 
+			posts: [{
+				herbalist, 
 				botanical_name,
 				common_name, 
 				history,
@@ -37,17 +34,22 @@ export default class Main extends Component {
 		})
 	}
 
-	render() {
-		const posts = this.state.post.map((post, index) => {
-			return (
-				<li>
-					<h3>{post.herbalist}</h3>
-					<h5>{post.botanical_name}</h5>
-					<h5>{post.common_name}</h5>
-					<h5>{post.history}</h5>
-					<h6>{post.uses}</h6>
+	handleDeletePost = postIdx => {
+		const newStateArray = this.state.posts
+		.filter((elem, idx) => idx !== postIdx);
 
-				</li>
+		this.setState({ posts: newStateArray });
+	}
+
+	render() {
+		const postsList = this.state.posts.map((post, index) => {
+			return (
+				<MateriaPost
+					key={index}
+					{...post}
+					handleDeletePost={this.handleDeletePost}
+					index={index}
+				/>
 			)
 		})
 
@@ -57,11 +59,11 @@ export default class Main extends Component {
 					<h1>Materia Medica Online</h1>
 				</header>
 				<section>
-				<button onClick={this.handleClick}>toggle</button>
+					<Button handleClick={this.handleClick} type={"Add New Post"}/>
 					{!!this.state.isPosting ? (
 						<Form handleAddPost={this.handleAddPost} />
 					) : null}
-					<ul>{posts}</ul>
+					<ul>{postsList}</ul>
 				</section>
 			</div>
 		)
