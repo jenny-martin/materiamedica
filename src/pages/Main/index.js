@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Form from '../Form';
-import MateriaPost from '../MateriaPost';
-import Button from '../Button';
+import Form from '../../components/Form';
+import MateriaPost from '../../components/MateriaPost';
+import Button from '../../components/Button';
+import NavBar from '../../components/NavBar/NavBar';
+
+
 
 export default class Main extends Component {
 	state = {
@@ -16,6 +19,7 @@ export default class Main extends Component {
 			}
 		]
 	}
+	
 
 	handleClick = (event) => {
 		this.setState({
@@ -40,7 +44,7 @@ export default class Main extends Component {
 
 		this.setState({ posts: newStateArray });
 	}
-
+	
 	render() {
 		const postsList = this.state.posts.map((post, index) => {
 			return (
@@ -52,11 +56,12 @@ export default class Main extends Component {
 				/>
 			)
 		})
-
+	
 		return (
 			<div>
 				<header>
 					<h1>Materia Medica Online</h1>
+					<NavBar/>
 				</header>
 				<section>
 					<Button handleClick={this.handleClick} type={"Add New Post"}/>
