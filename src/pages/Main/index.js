@@ -62,8 +62,8 @@ export default class Main extends Component {
 				<header>
 					<h1>Materia Medica Online</h1>
 					<NavBar 
-					user={props.user}
-					handleLogout={props.handleLogout}/>
+					user={this.props.user}
+					handleLogout={this.props.handleLogout}/>
 				</header>
 				<section>
 					<Button handleClick={this.handleClick} type={"Add New Post"}/>
