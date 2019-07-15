@@ -5,6 +5,7 @@ import Main from '../Main';
 import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
+import About from '../About';
 
 class App extends Component {
   constructor() {
@@ -48,6 +49,7 @@ class App extends Component {
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/>
+          <About />
      </Switch>
     </div>
   );
