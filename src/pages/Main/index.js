@@ -6,6 +6,7 @@ import NavBar from '../../components/NavBar/NavBar';
 
 
 
+
 export default class Main extends Component {
 	state = {
 		isPosting: false,
@@ -76,3 +77,4 @@ export default class Main extends Component {
 		)
 	}
 }
+

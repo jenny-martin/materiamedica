@@ -47,6 +47,7 @@ class App extends Component {
               history={history}
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
+            <Route path='/about'/>
           }/>
      </Switch>
     </div>
