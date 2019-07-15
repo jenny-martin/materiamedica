@@ -1,7 +1,40 @@
-.container {
-    position: relative;
+body {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;  
+    background-color: darkgrey;
+    
+    
+}
+
+.h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 60px;
+    height: 100px;
     width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box; }
+    margin: 0;
+    background-image: url("https://i.imgur.com/WcR3Det.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin-top: 150px;
+    box-sizing: border-box; 
+    text-align: center;
+    background-color: lavender;
+    border: 10px solid darkslategrey;
+    
+}
+
+.main {
+    color: darkslategrey;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 20px;
+
+}

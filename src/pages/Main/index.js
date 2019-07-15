@@ -59,11 +59,11 @@ export default class Main extends Component {
 	
 		return (
 			<div>
-				<header>
-					<h1>Materia Medica Online</h1>
-					<NavBar 
+				<header >
+				<NavBar 
 					user={this.props.user}
 					handleLogout={this.props.handleLogout}/>
+    <h1 className="h1">Materia Medica Online</h1>
 				</header>
 				<section>
 					<Button handleClick={this.handleClick} type={"Add New Post"}/>

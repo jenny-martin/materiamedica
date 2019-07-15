@@ -29,10 +29,12 @@ class App extends Component {
     <div className="container">
      <Switch>
      <Route exact path='/' render={() =>
+     <div className="main">
       <Main 
       handleLogout={this.handleLogout}
       user={this.state.user}
       />
+      </div>
      }/>
       <Route exact path='/signup' render={({ history }) => 
             <SignupPage
