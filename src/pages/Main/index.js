@@ -10,17 +10,15 @@ import NavBar from '../../components/NavBar/NavBar';
 export default class Main extends Component {
 	state = {
 		isPosting: false,
-		posts: [
-			{
-				herbalist: 'Jenny Martin',
-				botanical_name: 'Mentha Piperita',
-				common_name: 'Mint',
-				history: 'stuff',
-				uses:'things'
-			}
-		]
+		posts: []
 	}
-	
+	componentDidMount() {
+		getPosts().then(results =>
+			this.setState({
+				posts: results
+			})
+		)
+	}
 
 	handleClick = (event) => {
 		this.setState({
@@ -29,13 +27,29 @@ export default class Main extends Component {
 	}
 
 	handleAddPost = ({herbalist, botanical_name, common_name, history, uses}) => {
-		this.setState({
-			posts: [{
-				herbalist, 
-				botanical_name,
-				common_name, 
-				history,
-				uses }, ...this.state.posts]
+		const options = {
+			method: 'POST',
+			headers: {
+				'content-type': 'application/json'
+			},
+			body: JSON.stringify({ herbalist, botanical_name, common_name, history, uses})
+		}
+		console.log(options)
+		async function createPost() {
+			try {
+				const sendPost = await fetch('http://localhost:3001/api/post', options)
+				const postResult = await sendPost.json()
+				return await postResult
+			} catch (error) {
+				console.log('line 39', error)
+			}
+		}
+		createPost().then(result => {
+			console.log(result)
+			this.setState({
+				posts: [{ ...result }, ...this.state.posts],
+				isPosting: false
+			})
 		})
 	}
 
@@ -76,6 +90,15 @@ export default class Main extends Component {
 				</section>
 			</div>
 		)
+	}
+}
+async function getPosts() {
+	try {
+		const fetchPosts = await fetch('http://localhost:3001/api/posts')
+		const data = fetchPosts.json()
+		return await data
+	} catch (error) {
+		console.log(error)
 	}
 }
 
