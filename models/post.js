@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var postSchema = new Schema({
-    herbalist: {type: String, required: true},
+    herbalist: {type: String},
     botanical_name: {type: String},
     common_name: {type: String},
     history: {type: String},

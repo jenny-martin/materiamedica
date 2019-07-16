@@ -9,7 +9,7 @@ import NavBar from '../../components/NavBar/NavBar';
 
 export default class Main extends Component {
 	state = {
-		isPosting: false,
+		isPosting: true,
 		posts: []
 	}
 	componentDidMount() {
@@ -37,7 +37,7 @@ export default class Main extends Component {
 		console.log(options)
 		async function createPost() {
 			try {
-				const sendPost = await fetch('http://localhost:3001/api/post', options)
+				const sendPost = await fetch('http://localhost:3001/api/posts', options)
 				const postResult = await sendPost.json()
 				return await postResult
 			} catch (error) {
@@ -48,7 +48,7 @@ export default class Main extends Component {
 			console.log(result)
 			this.setState({
 				posts: [{ ...result }, ...this.state.posts],
-				isPosting: false
+				isPosting: true
 			})
 		})
 	}

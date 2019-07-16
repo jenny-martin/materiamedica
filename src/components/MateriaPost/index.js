@@ -1,7 +1,8 @@
 import React from 'react';
 import Button from '../Button';
 
-function MateriaPost ({ herbalist, 
+function MateriaPost ({ 
+    herbalist, 
     botanical_name,
     common_name, 
     history,
