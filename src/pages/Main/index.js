@@ -5,8 +5,6 @@ import Button from '../../components/Button';
 import NavBar from '../../components/NavBar/NavBar';
 
 
-
-
 export default class Main extends Component {
 	state = {
 		isPosting: true,

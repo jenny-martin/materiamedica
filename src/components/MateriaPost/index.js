@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button';
+import './MateriaPost.css';
 
 function MateriaPost ({ 
     herbalist, 
@@ -8,17 +9,20 @@ function MateriaPost ({
     history,
     uses, index, handleDeletePost }) {
         return (
-            <li>
-                <h3>{herbalist}</h3>
-                <h4>{botanical_name}</h4>
-                <h4>{common_name}</h4>
-                <h4>{history}</h4>
-                <h6>{uses}</h6>
+            <div className="card-container">
+            <li className="cards">
+                <h3>Herbalist: {herbalist}</h3>
+                <h4>Botanical Name: {botanical_name}</h4>
+                <h4>Common Name: {common_name}</h4>
+                <h4>History: {history}</h4>
+                <h6>Uses: {uses}</h6>
                 <Button 
+                className="card-button"
                 type={"Delete"}
                 index={index}
                 handleDeletePost = {handleDeletePost} />
             </li>
+            </div>
         )
     }
 

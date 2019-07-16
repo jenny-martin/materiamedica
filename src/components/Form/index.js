@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Form.css';
 
 export default class Form extends Component {
     state = {
@@ -29,9 +30,9 @@ export default class Form extends Component {
 
     render() {
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form className="form" onSubmit={this.handleSubmit}>
                 <div>
-                    <label>Herbalist</label>
+                    <label>Herbalist:  </label>
                     <input 
                     onChange={this.handleChange}
                     name="herbalist"
@@ -39,7 +40,7 @@ export default class Form extends Component {
                     />
                 </div>
                 <div>
-                    <label>Botanical Name</label>
+                    <label>Botanical Name:  </label>
                     <input 
                     onChange={this.handleChange}
                     name="botanical_name"
@@ -47,7 +48,7 @@ export default class Form extends Component {
                     />
                 </div>
                 <div>
-                    <label>Common Name</label>
+                    <label>Common Name:  </label>
                     <input 
                     onChange={this.handleChange}
                     name="common_name"
@@ -55,20 +56,20 @@ export default class Form extends Component {
                     />
                 </div>
                 <div>
-                    <label>History</label>
+                    <label>History:  </label>
                     <input onChange={this.handleChange}
                     name="history"
                     value={this.state.history}
                     />
                 </div>
             <div>
-                <label>Uses</label>
+                <label>Uses:  </label>
                 <textarea onChange={this.handleChange}
                     name="uses"
                     value={this.state.uses}
                     ></textarea>
                 </div>
-                <input type="submit" />
+                <input className="button" type="submit" />
             </form>
         )
     }
