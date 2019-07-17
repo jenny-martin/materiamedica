@@ -34,11 +34,11 @@ User -|---< Post
 
 ## Screenshots: 
 
-[Homepage] !(https://i.imgur.com/Gw8fH3U.png)
-[About] !(https://i.imgur.com/2CEPcSu.png)
-[NewPost] !(https://i.imgur.com/nb2nCTh.png)
-[Login] !(https://i.imgur.com/BMjklXt.png)
-[Signup] !(https://i.imgur.com/z14GNys.png)
+![Homepage](https://i.imgur.com/Gw8fH3U.png)
+![About](https://i.imgur.com/2CEPcSu.png)
+![NewPost](https://i.imgur.com/nb2nCTh.png)
+![Login](https://i.imgur.com/BMjklXt.png)
+![Signup](https://i.imgur.com/z14GNys.png)
 
 
 ## Unsolved Problems:
