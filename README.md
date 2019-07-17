@@ -20,7 +20,7 @@ Each user will be able to view other herbalists' data, but they will not have th
 * Express backend
 * MongoDB Atlas - Database
 * Node.js 
-* Bootstrap? Materialize? - Styling
+
 
 ## ERD
 
