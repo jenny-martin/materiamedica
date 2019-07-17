@@ -28,9 +28,9 @@ User -|---< Post
 
 ## Getting Started:
 
-[Trello] !(https://trello.com/b/2BOOpOao/unit-4-project)
-[GitHub] !(https://github.com/jennynm1010/materiamedica)
-[Heroku] !(https://materia-medica.herokuapp.com/)
+Trello (https://trello.com/b/2BOOpOao/unit-4-project)
+GitHub (https://github.com/jennynm1010/materiamedica)
+Heroku (https://materia-medica.herokuapp.com/)
 
 ## Screenshots: 
 
