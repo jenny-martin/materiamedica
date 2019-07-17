@@ -1,18 +1,15 @@
 body {
-    
     display: flex;
     flex-direction: column;
-    margin: 0;  
-    background-color: darkgrey;
-    
-    
+    margin: 0 auto;  
 }
 
 .h1 {
     font-family: 'Megrim', cursive;
     font-size: 60px;
     height: 100px;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     padding: 26px;
     background-image: url("https://i.imgur.com/WcR3Det.jpg");
     background-repeat: no-repeat;
@@ -26,15 +23,17 @@ body {
     width: 100%;
     max-width: 1024px;
     margin-top: 150px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box; 
+    /* box-sizing: border-box;  */
     text-align: center;
-    background-color: lavender;   
+    background-color: lavender; 
+    padding-bottom: 20px;  
 }
 
 .main {
-    color: darkslategrey;
+    color: rgb(8, 28, 28);
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
 

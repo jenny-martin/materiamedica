@@ -32,15 +32,15 @@ export default class Form extends Component {
         return(
             <form className="form" onSubmit={this.handleSubmit}>
                 <div>
-                    <label>Herbalist:  </label>
-                    <input 
+                    <label className="label">Herbalist: </label>
+                    <input
                     onChange={this.handleChange}
                     name="herbalist"
                     value={this.state.herbalist}
                     />
                 </div>
                 <div>
-                    <label>Botanical Name:  </label>
+                    <label className="label">Botanical Name:</label>
                     <input 
                     onChange={this.handleChange}
                     name="botanical_name"
@@ -48,26 +48,26 @@ export default class Form extends Component {
                     />
                 </div>
                 <div>
-                    <label>Common Name:  </label>
+                    <label className="label">Common Name:</label>
                     <input 
                     onChange={this.handleChange}
                     name="common_name"
                     value={this.state.common_name}
                     />
-                </div>
+                    </div>
                 <div>
-                    <label>History:  </label>
+                    <label className="label">History: </label>
                     <input onChange={this.handleChange}
                     name="history"
                     value={this.state.history}
                     />
                 </div>
             <div>
-                <label>Uses:  </label>
-                <textarea onChange={this.handleChange}
+                <label className="label">Uses: </label>
+                <input onChange={this.handleChange}
                     name="uses"
                     value={this.state.uses}
-                    ></textarea>
+                    ></input>
                 </div>
                 <input className="button" type="submit" />
             </form>

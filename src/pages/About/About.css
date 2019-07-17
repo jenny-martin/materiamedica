@@ -1,5 +1,4 @@
 body {
-    
     background-color: darkslategray;
 }
 
@@ -17,18 +16,16 @@ h1 {
 p {
     color: darkslategrey;
     font-size: 20px;
-    font-family: 'Reenie Beanie', cursive;
-    padding: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    justify-content: center;
+    margin: 30px auto;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 img {
-    border: 5px solid darkslategrey;
-    border-radius: 10px;
+    border: 8px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    font-family: 'Reenie Beanie', cursive;
-}

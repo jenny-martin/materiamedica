@@ -1,7 +1,23 @@
 .LoginPage {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
     align-items: center;
-    margin-bottom: 50px;
-  }
+    color: white;
+    font-family: 'Megrim', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    background-image: url("https://i.imgur.com/gxauMNT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+ }
+
+ .header-footer {
+   font-size: 40px;
+   font-weight: bold;
+  
+ }

@@ -10,18 +10,20 @@ function MateriaPost ({
     uses, index, handleDeletePost }) {
         return (
             <div className="card-container">
-            <li className="cards">
+             <section className="cards">
+            <li className="card">
                 <h3>Herbalist: {herbalist}</h3>
                 <h4>Botanical Name: {botanical_name}</h4>
                 <h4>Common Name: {common_name}</h4>
                 <h4>History: {history}</h4>
-                <h6>Uses: {uses}</h6>
+                <h4>Uses: {uses}</h4>
                 <Button 
                 className="card-button"
                 type={"Delete"}
                 index={index}
                 handleDeletePost = {handleDeletePost} />
             </li>
+            </section>
             </div>
         )
     }
