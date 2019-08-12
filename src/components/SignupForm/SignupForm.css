@@ -1,0 +1,27 @@
+.cancel {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+
+.cancel:hover {
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.signupButton {
+    height: 30px;
+    width: 80px;
+    font-size: 14px;
+    background-color: lavender;
+    color: darkgreen;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+}
+
+.signupButton:hover {
+    background-color: darkgreen;
+    color: lavender;
+    border: 3px solid lavender; 
+}

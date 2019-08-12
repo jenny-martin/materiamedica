@@ -9,9 +9,10 @@
   
   .NavBar-link {
     margin: 0 10px;
+    text-decoration: none;
   }
   
   .NavBar-welcome {
     color: darkolivegreen;
-    font-size: 16px;
+    font-size: 18px;
   }

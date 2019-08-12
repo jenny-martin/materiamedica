@@ -1,5 +1,6 @@
 body {
     background-color: darkslategray;
+    padding: 20px;
 }
 
 .container {
@@ -21,11 +22,13 @@ p {
     margin: 30px auto;
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 5px;
 }
 
 img {
     border: 8px solid white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     transition: 0.3s;
+    margin-bottom: 60px;
 }
 

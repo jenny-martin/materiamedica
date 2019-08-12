@@ -8,7 +8,6 @@ body {
     font-family: 'Megrim', cursive;
     font-size: 60px;
     height: 100px;
-    width: 95%;
     margin: 0 auto;
     padding: 26px;
     background-image: url("https://i.imgur.com/WcR3Det.jpg");
@@ -26,17 +25,15 @@ body {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    /* box-sizing: border-box;  */
     text-align: center;
     background-color: lavender; 
-    padding-bottom: 20px;  
 }
 
 .main {
     color: rgb(8, 28, 28);
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
-
+    
 }
 
 ul {
