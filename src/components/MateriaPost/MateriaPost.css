@@ -1,7 +1,5 @@
 .card-container{
     display:flex;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
     align-items: flex-start;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
